@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: black;
+    color: #fff;
+    padding: 0 1em;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+nav p{
+    font-size: 25px;
+}
+nav .nav-other ul{
+    display: flex;
+    list-style-type: none;
+}
+nav .nav-other ul li{
+    margin-right: 2em;
+
+}
+nav .nav-other ul li a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-size: 18px;
+}
+nav .nav-other ul li a:hover{
+    color: green;
+}
+nav .nav-other ul li a:after{
+    content: '';
+    position: absolute;
+    background-color: green;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: .3s;
+}
+nav .nav-other ul li a:hover:after{
+    width: 100%;
+}
+
+nav .order{
+    text-decoration: none;
+    padding: .5em 1em;
+    color: #fff;
+    border-top: 2px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.image img{
+    max-width: 100%;
+    height: auto;
+}
+.text{
+    font-size: 18px;
+    width: 100vw;
+}
+.text-head{
+    font-size: 32px;
+}
+span{
+    color: green;
+}
+.text-main{
+    padding: 2em 0;
+}
+section a {
+    text-decoration: none;
+}
+.first-link{
+    padding: .5em 2em;
+    background-color: white;
+    color: #000;
+}
+.second-link{
+    padding: .5em 1em;
+    background-color: transparent;  
+    border: 1px solid green;
+    color: green;
+}
+.brands{
+    position: relative;
+    top: 20px;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    align-items: center;justify-content: space-around;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 0;
+    box-shadow: 0 2px 2px 1px  gray;
+}
+.brands ion-icon{
+    font-size: 32px;
+    border: 1px soldi black;
+}
+
+
+/* Main Layout css*/
+main{
+    padding: 4em 0;
+}
+main .main-head{
+    text-align: center;
+    font-size: 32px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    padding-top: 2em;
+}
+.grid{
+    text-align: center;
+    background-color: white;
+    padding:3em .3em;
+    box-shadow: 0 2px 2px 1px  gray;
+    border-radius: 5px;
+}
+.grid-head{
+    display: flex;
+    align-items: center;
+}
+.grid-head ion-icon{
+    font-size: 25px;
+    color: rgb(106, 9, 166);
+}
+.grid-head p{
+    text-align: center;
+    margin-left: 16px;
+    font-weight: 600;
+
+}
+.grid p{
+    padding: 1em 0;
+}
+.grid a {
+    text-decoration: none;
+    color: purple;
+}
+
+
+
+.second-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    padding: 2em 0;
+}
+.second-grid{
+    width: 25vw;
+    background-color: white;
+    box-shadow: 0 2px 2px 1px  gray;
+}
+.second-grid p{
+    padding: .5em 1em;
+}
+.second-grid-head{
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+.grid-text{
+ background-color: black;
+}
+
+
+
+
+.product-name{
+    font-weight: 900;
+    font-size: 20px;
+    padding-left: 3em;
+    padding-top: 2em;
+}
+.second-container img{
+    max-width: 100%;
+    height: auto;
+}
+.second-container-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-container-links a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: .5em 1em;
+    border-radius: 2px;
+}
+.second-container-links p{
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
+
+
+
+.email{
+    padding: 4em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-image{
+    max-width:50vw;
+}
+.email-image img{
+    max-width:100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-right: 20px;
+}
+.email-text{
+    padding-left: 20px;
+}
+.first-text{
+    font-size:32px;
+    font-weight:300;
+    padding-bottom:8px
+}
+.second-text{
+    padding: 8px 0;
+}
+.email-main{
+    position: absolute;
+}
+.email-main input{
+    padding: 10px 15px;
+    border-radius: 0;
+    font-size: 14px;
+    border: 0;
+    outline: none;
+    background: rgb(90, 89, 89);
+    color: green;
+}
+.email-main a{
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color:blue;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+.last-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last-part-text{
+    background-color: blue;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 2em 1em;
+}
+.last-head{
+    font-weight: 700;
+    padding: 1em 0;
+}
+.last-part p{
+    padding: 1em 0;
+}
+.last-part img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(70, 68, 68);
+    padding: 5em 0;
+    color: #fff;
+}
+.footer-details ul{
+    list-style: none;
+    
+}
+.footer-details ul li{
+    padding: 1em 0;
+}
+.footer-details ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-details ul li a:hover{
+    text-decoration: underline;
+}
+.footer-head{
+    font-weight: 500;
+    padding-bottom: 1em;
+}
